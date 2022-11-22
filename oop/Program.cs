@@ -6,7 +6,9 @@ namespace oop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World ");
+            Book LOTR = new Book();
+            LOTR.title = "miskociganko";
+            Console.WriteLine(LOTR.title);
         }
     }
 }
