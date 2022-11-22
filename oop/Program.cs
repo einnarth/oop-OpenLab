@@ -6,7 +6,7 @@ namespace oop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ahoj Svet ");
+            Console.WriteLine("Hello World ");
         }
     }
 }
