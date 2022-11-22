@@ -9,6 +9,7 @@ namespace oop
             Book LOTR = new Book();
             LOTR.title = "miskociganko";
             Console.WriteLine(LOTR.title);
+            
         }
     }
 }
