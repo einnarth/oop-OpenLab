@@ -63,5 +63,32 @@ namespace oop
             Console.WriteLine($"Autor: {_author}");
             Console.WriteLine($"Dátum vydania {_relaseDate}");
         }
+
+        public Book()
+        {
+            _title = "-1";
+            _pages = -1;
+            _category = "-1";
+            _author = "-1";
+            _relaseDate = -1;
+        }
+
+        public Book(string title, int pages)
+        {
+            _title = title;
+            _pages = pages;
+            _category = "-1";
+            _author = "-1";
+            _relaseDate = -1; 
+        }
+
+        public Book(string title, int pages, string category, string author, int relaseDate)
+        {
+            _title = title;
+            _pages = pages;
+            _category = category;
+            _author = author;
+            _relaseDate = relaseDate;
+        }
     }
 }
