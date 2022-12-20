@@ -18,7 +18,10 @@ namespace oop
             lotr2.Information();
             Book lotr3 = new Book("Pán Prsteňov: Návrat Kráľa", 170);
             lotr3.Information();
-            Book hobbit = new Book("Hobbit", 370, "fantasy novel", "J.R.R Tolkien", 1937);
+            Book hobbit = new Book("Hobbit", 370, "fantasy novel", "J.R.R Tolkien", 1937)
+            {
+                CategoryM = Book.CategoryList[4 + 3]
+            };
             hobbit.Information();
 
 
