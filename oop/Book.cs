@@ -119,5 +119,10 @@ namespace oop
         /// </summary>
         public static List<string> CategoryList = new List<string>()
             { "detské", "romantické", "náučné", "sci-fi", "dobrodružné" };
+
+        public override string ToString()
+        {
+            return this._title;
+        }
     }
 }

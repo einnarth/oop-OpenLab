@@ -1,30 +1,29 @@
 ﻿
+using System;
+
 namespace oop
 {
     static class Program
     {
         static void Main(string[] args)
         {
-            Book lotr = new Book
+            var slovenskýJazyk = new Book("Slovenský Jazyk", 193);
+            var matematika = new Book("Matematika", 23);
+            var fyzika = new Book("Fyzika",55);
+            var elektronika = new Book("Elektronika", 532);
+            var schoolLibrary = new Library();
             {
-                TitleM = "miskociganko",
-                PagesM = 153,
-                CategoryM = "fantasy",
-                AuthorM = "michal bernat",
-                RelaseDateM = 2012
-            };
-            lotr.Information();
-            Book lotr2 = new Book();
-            lotr2.Information();
-            Book lotr3 = new Book("Pán Prsteňov: Návrat Kráľa", 170);
-            lotr3.Information();
-            Book hobbit = new Book("Hobbit", 370, "fantasy novel", "J.R.R Tolkien", 1937)
-            {
-                CategoryM = Book.CategoryList[4 + 3]
-            };
-            hobbit.Information();
+                schoolLibrary.StudentsList.Add("John");
+                schoolLibrary.StudentsList.Add("Poul");
+                schoolLibrary.BooksList.Add(slovenskýJazyk);
+                schoolLibrary.BooksList.Add(matematika);
+                schoolLibrary.BooksList.Add(fyzika);
+                schoolLibrary.BooksList.Add(elektronika);
+                schoolLibrary.NumberOfBooks = 4;
+                schoolLibrary.NumberOfStudents = 2;
+            }
 
-
+            Console.WriteLine(schoolLibrary.ToString());
         }
         
     }
